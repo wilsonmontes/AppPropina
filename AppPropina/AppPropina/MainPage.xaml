@@ -7,5 +7,33 @@
 	<Label Text="Welcome to Xamarin.Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
+    <TableView Intent="Form">
+        <TableSection Title="Datos Generales">
+            <EntryCell x:Name="entTotal"
+                       Label="Total"
+                       Placeholder="%">
+            </EntryCell>
+            <EntryCell x:Name="entPropina"
+                       Label="Propina"
+                       Placeholder="$0.0">
+            </EntryCell>
+            <EntryCell x:Name="entPersonas"
+                       Label="Personas"
+                       Placeholder="Ingrese número de personas">
+            </EntryCell>
+        </TableSection>
+        <TableSection Title="Calcular">
+            <ViewCell>
+                <ViewCell.View>
+                    <StackLayout>
+                        <Button Text="Calcular"
+                                x:Name="bntCalcular">
+                            
+                        </Button>
+                    </StackLayout>
+                </ViewCell.View>
+            </ViewCell>
+        </TableSection>
+    </TableView>
 
 </ContentPage>
