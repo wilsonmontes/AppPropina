@@ -7,7 +7,8 @@
 	<Label Text="Welcome to Xamarin.Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <TableView Intent="Form">
+    <TableView Intent="Form"
+               HasUnevenRows="True">
         <TableSection Title="Datos Generales">
             <EntryCell x:Name="entTotal"
                        Label="Total"
@@ -28,11 +29,31 @@
                     <StackLayout>
                         <Button Text="Calcular"
                                 x:Name="bntCalcular">
-                            
                         </Button>
+                        <Image Source="icon.png"
+                               Scale=".8">                            
+                        </Image>
                     </StackLayout>
                 </ViewCell.View>
             </ViewCell>
+        </TableSection>
+        <TableSection Title="Resultados">
+            <TextCell x:Name="txtTotalPropina"
+                      Text="Propina"
+                      Detail="$0.0">
+            </TextCell>
+            <TextCell x:Name="txtTotal"
+                      Text="Total"
+                      Detail="$0.0">
+            </TextCell>
+            <TextCell x:Name="txtPropinaPersona"
+                      Text="Propina por persona"
+                      Detail="$0.0">
+            </TextCell>
+            <TextCell x:Name="txtTotalPersona"
+                      Text="Total por persona"
+                      Detail="$0.0">
+            </TextCell>
         </TableSection>
     </TableView>
 
