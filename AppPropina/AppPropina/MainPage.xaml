@@ -27,8 +27,8 @@
             <ViewCell>
                 <ViewCell.View>
                     <StackLayout>
-                        <Button Text="Calcular"
-                                x:Name="bntCalcular">
+                        <Button x:Name="bntCalcular"
+                            Text="Calcular">
                         </Button>
                         <Image Source="icon.png"
                                Scale=".8">                            
